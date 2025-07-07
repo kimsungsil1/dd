@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>디자인 자기 평가 - Apple 스타일</title>
+  <title>디자인 자기평가 (가인지 스타일)</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f5f5f7;
+      background-color: #f9f9fb;
       margin: 0;
       padding: 20px;
       color: #1d1d1f;
@@ -17,87 +18,106 @@
       background: #fff;
       border-radius: 16px;
       padding: 40px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 16px;
-      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     h2 {
       font-size: 20px;
       margin-top: 40px;
-      color: #6e6e73;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 4px;
+      margin-bottom: 10px;
     }
     label {
-      display: block;
-      margin: 20px 0 10px;
       font-weight: 600;
+      display: block;
+      margin: 20px 0 6px;
     }
     input, textarea, select {
       width: 100%;
       padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
       font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
       box-sizing: border-box;
     }
     textarea {
       height: 100px;
     }
-    .rating {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-    }
-    .rating label {
-      flex: 1;
-      text-align: center;
-      font-weight: 400;
-    }
     .submit-button {
-      margin-top: 40px;
       width: 100%;
       padding: 14px;
+      margin-top: 40px;
       background-color: #0071e3;
       color: white;
       border: none;
+      border-radius: 10px;
       font-size: 18px;
-      border-radius: 12px;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>디자인 자기 평가</h1>
+    <h1>디자인 자기평가</h1>
+    <p style="text-align: center; color: #666;">지금 나의 디자인 능력이 어디쯤 있는지 돌아보고, 더 성장하기 위한 방향을 찾는 시간입니다.</p>
 
     <h2>기본 정보</h2>
     <label>1. 이름</label>
     <input type="text">
 
-    <label>2. 직급 및 부서</label>
+    <label>2. 지금 하는 일 (직급, 부서 포함)</label>
     <input type="text">
 
-    <label>3. 주요 결과물 3가지</label>
+    <label>3. 요즘 주로 맡고 있는 디자인 일은 어떤 건가요?</label>
     <textarea></textarea>
 
-    <h2>기술 역량</h2>
-    <label>4. 디자인 툴 숙련도 (1~5)</label>
+    <h2>디자인 실력 돌아보기</h2>
+    <label>4. 디자인 프로그램(포토샵, 일러스트 등)을 얼마나 편하게 다루나요? (1~5)</label>
     <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
 
-    <label>5. 자신 있는 디자인 작업과 이유</label>
+    <label>5. 자신 있는 디자인 작업은 어떤 건가요? 왜 자신 있나요?</label>
     <textarea></textarea>
 
-    <label>6. 가장 만족한 작업물과 이유</label>
+    <label>6. 내가 만든 디자인 중 제일 마음에 드는 건 어떤 건가요? 그 이유는요?</label>
     <textarea></textarea>
 
-    <label>7. 디자인 트렌드 이해도 (1~5)</label>
+    <label>7. 요즘 디자인 트렌드를 얼마나 잘 알고 있나요? (1~5)</label>
     <select><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
 
-    <h2>피드백 및 자기 인식</h2>
-    <label>8. 최근 받은 뼈아픈 피드백과 행동</label>
+    <h2>피드백과 팀워크</h2>
+    <label>8. 피드백을 받을 때 나는 보통 어떻게 반응하나요? (중복 선택)</label>
+    <textarea placeholder="예: 바로 반영하려고 노력한다, 일단 듣고 내가 판단해서 반영한다 등"></textarea>
+
+    <label>9. 최근에 누군가 내 디자인에 해준 말 중, 마음에 남는 게 있나요? 그 말은 어떤 의미였나요?</label>
     <textarea></textarea>
 
+    <h2>자기 객관화</h2>
+    <label>10. 팀 내에서 내 디자인 실력은 몇 번째쯤 된다고 생각하나요?</label>
+    <input type="number">
+
+    <label>11. 동료들이 나에게 줄 점수는 평균 몇 점일까요? (1~10)</label>
+    <input type="number">
+
+    <label>12. 최근 받은 실제 디자인 평가 점수나 피드백이 있다면 적어주세요.</label>
+    <input type="text">
+
+    <h2>성장과 목표</h2>
+    <label>13. 내 실력을 높이기 위해 내가 먼저 고쳐야 할 점은 무엇인가요?</label>
+    <textarea></textarea>
+
+    <label>14. 앞으로 6개월 안에 달성하고 싶은 디자인 목표는 무엇인가요?</label>
+    <input type="text">
+
+    <label>15. 이번 평가를 통해 느낀 점이나 다짐하고 싶은 말이 있다면 적어주세요. (선택)</label>
+    <textarea></textarea>
+
+    <button class="submit-button">제출하기</button>
+  </div>
+</body>
+</html>
